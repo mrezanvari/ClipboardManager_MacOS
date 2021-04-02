@@ -1,0 +1,2 @@
+# ClipboardManager_MacOS
+ 

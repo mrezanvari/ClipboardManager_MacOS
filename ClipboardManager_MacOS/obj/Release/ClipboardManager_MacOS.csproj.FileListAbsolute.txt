@@ -1,0 +1,12 @@
+/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/bin/Release/Simple Clipboard Manager.exe
+/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/bin/Release/Simple Clipboard Manager.pdb
+/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Release/actool/_PartialAppManifest.items
+/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Release/actool/_BundleResourceWithLogicalName.items
+/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Release/ibtool-manifests/Main.storyboardc
+/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Release/ibtool/Main.storyboardc/MainMenu.nib
+/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Release/ibtool/Main.storyboardc/XfG-lQ-9wD-view-m2S-Jp-Qdl.nib
+/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Release/ibtool/Main.storyboardc/NSWindowController-B8D-0N-5wS.nib
+/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Release/ibtool/Main.storyboardc/Info.plist
+/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Release/ClipboardManager_MacOS.csproj.CoreCompileInputs.cache
+/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Release/Simple Clipboard Manager.exe
+/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Release/Simple Clipboard Manager.pdb
