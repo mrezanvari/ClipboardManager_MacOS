@@ -66,15 +66,19 @@
 
 @interface ViewController : NSViewController {
 }
+	@property (nonatomic, assign) NSTextField * lblNumOfItems;
 	-(void) release;
 	-(id) retain;
 	-(uint32_t) xamarinGetGCHandle;
 	-(void) xamarinSetGCHandle: (uint32_t) gchandle;
+	-(NSTextField *) lblNumOfItems;
+	-(void) setLblNumOfItems:(NSTextField *)p0;
 	-(void) viewDidLoad;
 	-(NSObject *) representedObject;
 	-(void) setRepresentedObject:(NSObject *)p0;
 	-(void) btnAppendAll_Clicked:(NSObject *)p0;
 	-(void) btnClearAll_Clicked:(NSObject *)p0;
+	-(void) btnQuit_Clicked:(NSObject *)p0;
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 

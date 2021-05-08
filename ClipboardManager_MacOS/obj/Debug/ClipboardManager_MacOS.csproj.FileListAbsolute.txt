@@ -2,11 +2,10 @@
 /Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/bin/Debug/Simple Clipboard Manager.pdb
 /Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Debug/actool/_PartialAppManifest.items
 /Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Debug/actool/_BundleResourceWithLogicalName.items
-/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Debug/ibtool-manifests/Main.storyboardc
-/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Debug/ibtool/Main.storyboardc/MainMenu.nib
-/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Debug/ibtool/Main.storyboardc/XfG-lQ-9wD-view-m2S-Jp-Qdl.nib
-/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Debug/ibtool/Main.storyboardc/NSWindowController-B8D-0N-5wS.nib
-/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Debug/ibtool/Main.storyboardc/Info.plist
+/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Debug/ibtool/_BundleResourceWithLogicalName.items
+/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Debug/coremlc/_PartialAppManifest.items
+/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Debug/coremlc/_BundleResourceWithLogicalName.items
 /Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Debug/ClipboardManager_MacOS.csproj.CoreCompileInputs.cache
 /Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Debug/Simple Clipboard Manager.exe
 /Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Debug/Simple Clipboard Manager.pdb
+/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Debug/ClipboardManager_MacOS.csprojAssemblyReference.cache

@@ -16,6 +16,11 @@ namespace ClipboardManager_MacOS
         private string newStringData;
         private System.Collections.Generic.List<string> clipboardDataList;
 
+        public static ViewController sharedViewController()
+        {
+            return NSStoryboard.FromName("Main", null).InstantiateControllerWithIdentifier("ViewController") as ViewController; // gets the viewcontroller from storyboard...
+        }
+
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
@@ -47,7 +52,16 @@ namespace ClipboardManager_MacOS
             NSPasteboard.GeneralPasteboard.ClearContents();
             clipboardDataList.Clear();
             global_ClipboardChangeCounter++; // this will force the next clock cycle to ignore the new changes... so the whole list will not be reapeated!
-            NSApplication.SharedApplication.DockTile.BadgeLabel = "";
+            InvokeOnMainThread(() =>
+            {
+                lblNumOfItems.StringValue = clipboardDataList.Count.ToString();
+            });
+            //NSApplication.SharedApplication.DockTile.BadgeLabel = "";
+        }
+
+        partial void btnQuit_Clicked(Foundation.NSObject sender)
+        {
+            NSApplication.SharedApplication.Terminate(this);
         }
 
         private void clipboaardPoll_handler(object sender, System.Timers.ElapsedEventArgs e)
@@ -66,7 +80,10 @@ namespace ClipboardManager_MacOS
                 InvokeOnMainThread(() => //for some reason, to access clipboard we need to invoke on main thread ¯\_(ツ)_/¯
                 {
 
-                    NSApplication.SharedApplication.RequestUserAttention(NSRequestUserAttentionType.InformationalRequest); // bounce the app icon
+                    //NSApplication.SharedApplication.RequestUserAttention(NSRequestUserAttentionType.InformationalRequest); // bounce the app icon
+
+                    //var dataXML = NSPasteboard.GeneralPasteboard.GetDataForType(NSPasteboard.NSFilenamesType);
+                    //Console.WriteLine("Data: " + dataXML);
 
                     newStringData = NSPasteboard.GeneralPasteboard.GetStringForType(NSPasteboard.NSStringType);
                     global_ClipboardChangeCounter = local_ClipboardChangeCounter;
@@ -77,7 +94,11 @@ namespace ClipboardManager_MacOS
                     }
 
 
-                    NSApplication.SharedApplication.DockTile.BadgeLabel = clipboardDataList.Count.ToString();
+                    //NSApplication.SharedApplication.DockTile.BadgeLabel = clipboardDataList.Count.ToString();
+                    InvokeOnMainThread(() =>
+                    {
+                        lblNumOfItems.StringValue = clipboardDataList.Count.ToString();
+                    });
                     //var alert = new NSAlert()
                     //{
                     //    AlertStyle = NSAlertStyle.Informational,

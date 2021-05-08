@@ -12,14 +12,24 @@ namespace ClipboardManager_MacOS
 	[Register ("ViewController")]
 	partial class ViewController
 	{
+		[Outlet]
+		AppKit.NSTextField lblNumOfItems { get; set; }
+
 		[Action ("btnAppendAll_Clicked:")]
 		partial void btnAppendAll_Clicked (Foundation.NSObject sender);
 
 		[Action ("btnClearAll_Clicked:")]
 		partial void btnClearAll_Clicked (Foundation.NSObject sender);
+
+		[Action ("btnQuit_Clicked:")]
+		partial void btnQuit_Clicked (Foundation.NSObject sender);
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (lblNumOfItems != null) {
+				lblNumOfItems.Dispose ();
+				lblNumOfItems = null;
+			}
 		}
 	}
 }

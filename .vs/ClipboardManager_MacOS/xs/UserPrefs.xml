@@ -1,15 +1,14 @@
 ﻿<Properties StartupConfiguration="{3DB42E79-0FB4-440D-88DC-07620762DAC0}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="ClipboardManager_MacOS/ViewController.cs">
     <Files>
-      <File FileName="ClipboardManager_MacOS/ViewController.cs" Line="69" Column="121" />
+      <File FileName="ClipboardManager_MacOS/ViewController.cs" Line="59" Column="72" />
+      <File FileName="ClipboardManager_MacOS/AppDelegate.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ClipboardManager_MacOS" expanded="True">
-            <Node name="ClipboardManager_MacOS" expanded="True">
-              <Node name="ViewController.cs" expanded="True" selected="True" />
-            </Node>
+            <Node name="ClipboardManager_MacOS" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>

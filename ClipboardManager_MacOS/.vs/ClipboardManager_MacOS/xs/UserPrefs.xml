@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{3DB42E79-0FB4-440D-88DC-07620762DAC0}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="README.txt">
+    <Files>
+      <File FileName="README.txt" Line="2" Column="45" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ClipboardManager_MacOS" expanded="True">
+            <Node name="ClipboardManager_MacOS" expanded="True">
+              <Node name="README.txt" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ClipboardManager__MacOS PreferredExecutionTarget="Test1" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

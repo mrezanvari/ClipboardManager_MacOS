@@ -1,6 +1,6 @@
-# Version: 7.0.0.15 (d16-8: 87a1b18d8
-/Library/Frameworks/Xamarin.Mac.framework/Versions/7.0.0.15/lib/mmp/mmp.exe \
-	/Library/Frameworks/Xamarin.Mac.framework/Versions/7.0.0.15/bin/../lib/mmp/mmp.exe \
+# Version: 7.10.0.5 (xcode12.5: ab40b131d)
+/Library/Frameworks/Xamarin.Mac.framework/Versions/7.10.0.5/lib/mmp/mmp.exe \
+	/Library/Frameworks/Xamarin.Mac.framework/Versions/7.10.0.5/bin/../lib/mmp/mmp.exe \
 	'/target-framework:Xamarin.Mac,Version=v2.0,Profile=Mobile' \
 	--http-message-handler=HttpClientHandler \
 	--cache=/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Release/mmp-cache \
