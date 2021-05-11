@@ -4,7 +4,7 @@
 --cache=/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Debug/mmp-cache
 "--root-assembly=/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/bin/Debug/Simple Clipboard Manager.exe"
 --sdkroot=/Applications/Xcode.app/Contents/Developer
---targetver=10.14
+--targetver=10.15
 -q
 -q
 -q

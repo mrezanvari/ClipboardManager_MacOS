@@ -8,3 +8,4 @@
 /Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Release/ClipboardManager_MacOS.csproj.CoreCompileInputs.cache
 /Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Release/Simple Clipboard Manager.exe
 /Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Release/Simple Clipboard Manager.pdb
+/Users/mrezanvari/_MyFiles/Programs/MacOs/ClipboardManager_MacOS/ClipboardManager_MacOS/obj/Release/ClipboardManager_MacOS.csprojAssemblyReference.cache

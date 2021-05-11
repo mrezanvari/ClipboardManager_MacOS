@@ -15,6 +15,12 @@ namespace ClipboardManager_MacOS
 		[Outlet]
 		AppKit.NSTextField lblNumOfItems { get; set; }
 
+		[Outlet]
+		AppKit.NSSwitch OnOffSwitch_OBJ { get; set; }
+
+		[Outlet]
+		AppKit.NSTextView txtBox_ClipboardItems { get; set; }
+
 		[Action ("btnAppendAll_Clicked:")]
 		partial void btnAppendAll_Clicked (Foundation.NSObject sender);
 
@@ -23,12 +29,25 @@ namespace ClipboardManager_MacOS
 
 		[Action ("btnQuit_Clicked:")]
 		partial void btnQuit_Clicked (Foundation.NSObject sender);
+
+		[Action ("OnOffSwitch_stateChanged:")]
+		partial void OnOffSwitch_stateChanged (Foundation.NSObject sender);
 		
 		void ReleaseDesignerOutlets ()
 		{
 			if (lblNumOfItems != null) {
 				lblNumOfItems.Dispose ();
 				lblNumOfItems = null;
+			}
+
+			if (OnOffSwitch_OBJ != null) {
+				OnOffSwitch_OBJ.Dispose ();
+				OnOffSwitch_OBJ = null;
+			}
+
+			if (txtBox_ClipboardItems != null) {
+				txtBox_ClipboardItems.Dispose ();
+				txtBox_ClipboardItems = null;
 			}
 		}
 	}

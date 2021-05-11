@@ -67,12 +67,18 @@
 @interface ViewController : NSViewController {
 }
 	@property (nonatomic, assign) NSTextField * lblNumOfItems;
+	@property (nonatomic, assign) NSSwitch * OnOffSwitch_OBJ;
+	@property (nonatomic, assign) NSTextView * txtBox_ClipboardItems;
 	-(void) release;
 	-(id) retain;
 	-(uint32_t) xamarinGetGCHandle;
 	-(void) xamarinSetGCHandle: (uint32_t) gchandle;
 	-(NSTextField *) lblNumOfItems;
 	-(void) setLblNumOfItems:(NSTextField *)p0;
+	-(NSSwitch *) OnOffSwitch_OBJ;
+	-(void) setOnOffSwitch_OBJ:(NSSwitch *)p0;
+	-(NSTextView *) txtBox_ClipboardItems;
+	-(void) setTxtBox_ClipboardItems:(NSTextView *)p0;
 	-(void) viewDidLoad;
 	-(NSObject *) representedObject;
 	-(void) setRepresentedObject:(NSObject *)p0;

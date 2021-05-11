@@ -7,14 +7,16 @@ namespace ClipboardManager_MacOS
 {
     public partial class ViewController : NSViewController
     {
-        public ViewController(IntPtr handle) : base(handle)
-        {
-        }
-
-        private System.Timers.Timer clipboaardPollTimer; //polling method handler to check for changes in clipboad data.
+        private static System.Timers.Timer clipboaardPollTimer;
         private nint global_ClipboardChangeCounter;
+        private nint switchState = 0;
         private string newStringData;
         private System.Collections.Generic.List<string> clipboardDataList;
+
+        public ViewController(IntPtr handle) : base(handle)
+        {
+
+        }
 
         public static ViewController sharedViewController()
         {
@@ -38,11 +40,12 @@ namespace ClipboardManager_MacOS
         partial void btnAppendAll_Clicked(Foundation.NSObject sender)
         {
             string outString = "";
-            foreach (var stringItem in clipboardDataList)
-                outString += stringItem + "\n";
-
+            //foreach (var stringItem in clipboardDataList)
+            //    outString += stringItem + "\n";
+            outString = txtBox_ClipboardItems.TextStorage.Value;
             NSPasteboard.GeneralPasteboard.ClearContents();
-            NSPasteboard.GeneralPasteboard.SetStringForType(outString, NSPasteboard.NSStringType);
+            if (clipboardDataList.Count > 0) // if nothing in there just keep it clean!
+                NSPasteboard.GeneralPasteboard.SetStringForType(outString, NSPasteboard.NSStringType);
             global_ClipboardChangeCounter++; // this will force the next clock cycle to ignore the new changes... so the whole list will not be reapeated!
 
         }
@@ -55,6 +58,7 @@ namespace ClipboardManager_MacOS
             InvokeOnMainThread(() =>
             {
                 lblNumOfItems.StringValue = clipboardDataList.Count.ToString();
+                txtBox_ClipboardItems.TextStorage.Replace(new NSRange(0, txtBox_ClipboardItems.TextStorage.Value.Length), "");
             });
             //NSApplication.SharedApplication.DockTile.BadgeLabel = "";
         }
@@ -71,11 +75,12 @@ namespace ClipboardManager_MacOS
             InvokeOnMainThread(() =>
             {
                 local_ClipboardChangeCounter = NSPasteboard.GeneralPasteboard.ChangeCount;
+                switchState = OnOffSwitch_OBJ.State;
             });
 
             //Console.WriteLine("_DEBUG:   pasteboardCounter = " + pasteboardCounter.ToString());
 
-            if (local_ClipboardChangeCounter > global_ClipboardChangeCounter)
+            if (local_ClipboardChangeCounter > global_ClipboardChangeCounter && switchState == 1)
             {
                 InvokeOnMainThread(() => //for some reason, to access clipboard we need to invoke on main thread ¯\_(ツ)_/¯
                 {
@@ -86,29 +91,21 @@ namespace ClipboardManager_MacOS
                     //Console.WriteLine("Data: " + dataXML);
 
                     newStringData = NSPasteboard.GeneralPasteboard.GetStringForType(NSPasteboard.NSStringType);
-                    global_ClipboardChangeCounter = local_ClipboardChangeCounter;
+                    
 
                     if (!clipboardDataList.Contains(newStringData))
                     {
                         clipboardDataList.Add(newStringData);
+                        if (txtBox_ClipboardItems.TextStorage.Length > 0)
+                            txtBox_ClipboardItems.TextStorage.Append(new NSAttributedString("\n", null, NSColor.White));
+                        txtBox_ClipboardItems.TextStorage.Append(new NSAttributedString(newStringData, null, NSColor.White));
                     }
 
-
-                    //NSApplication.SharedApplication.DockTile.BadgeLabel = clipboardDataList.Count.ToString();
-                    InvokeOnMainThread(() =>
-                    {
-                        lblNumOfItems.StringValue = clipboardDataList.Count.ToString();
-                    });
-                    //var alert = new NSAlert()
-                    //{
-                    //    AlertStyle = NSAlertStyle.Informational,
-                    //    InformativeText = "\"" + newStringData + "\" is now copied to your clipboard!\n\nAnd also, clipboard" +
-                    //                            "has changed " + global_ClipboardChangeCounter + " times!",
-                    //    MessageText = "Ready...!",
-                    //};
-                    //alert.RunModal();
+                    lblNumOfItems.StringValue = clipboardDataList.Count.ToString();
+                   
                 });
             }
+            global_ClipboardChangeCounter = local_ClipboardChangeCounter;
         }
 
         public override NSObject RepresentedObject

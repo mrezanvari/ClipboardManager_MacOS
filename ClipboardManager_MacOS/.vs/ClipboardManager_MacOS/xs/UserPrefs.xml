@@ -1,14 +1,17 @@
 ﻿<Properties StartupConfiguration="{3DB42E79-0FB4-440D-88DC-07620762DAC0}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="README.txt">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ViewController.cs">
     <Files>
-      <File FileName="README.txt" Line="2" Column="45" />
+      <File FileName="ViewController.cs" Line="18" Column="1" />
+      <File FileName="AppDelegate.cs" Line="28" Column="155" />
+      <File FileName="README.txt" Line="3" Column="144" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ClipboardManager_MacOS" expanded="True">
             <Node name="ClipboardManager_MacOS" expanded="True">
-              <Node name="README.txt" selected="True" />
+              <Node name="Main.storyboard" selected="True" />
+              <Node name="ViewController.cs" expanded="True" />
             </Node>
           </Node>
         </State>
